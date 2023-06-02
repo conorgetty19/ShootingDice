@@ -10,7 +10,7 @@ namespace ShootingDice
         public override int Roll()
         {
             //shout a taunt every roll
-            Console.WriteLine($"{Taunt}");
+            Console.WriteLine($"{Name} says: {Taunt}");
             // Return a random number between 1 and DiceSize
             return new Random().Next(DiceSize) + 1;
         }

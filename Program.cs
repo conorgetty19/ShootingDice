@@ -35,8 +35,17 @@ namespace ShootingDice
             SmackTalkingPlayer smacker = new SmackTalkingPlayer();
             smacker.Name = "KILLER";
 
+            OneHigherPlayer higher = new OneHigherPlayer();
+            higher.Name = "ONEZIE";
+
+            HumanPlayer hughMan = new HumanPlayer();
+            hughMan.Name = "Hugh";
+
+            CreativeSmackTalkingPlayer creotine = new CreativeSmackTalkingPlayer();
+            creotine.Name = "Creo";
+
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smacker
+                player1, player2, player3, large, smacker, higher, hughMan, creotine
             };
 
             PlayMany(players);
